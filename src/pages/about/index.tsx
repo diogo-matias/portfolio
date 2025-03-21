@@ -10,21 +10,21 @@ const experiences = [
         subtitle: "Fullstack Developer",
         tecnologies: "C# • ASP/NET • SQL • AWS",
         period: "2025 ( atual )",
-        link: "www.arezzo.com.br",
+        link: "https://www.arezzo.com.br/",
     },
     {
         title: "Arezzo&Co",
         subtitle: "Mobile Developer | Web Developer",
         tecnologies: "React • Next • Tailwind • Typescript",
         period: "2022 - 2025",
-        link: "www.arezzo.com.br",
+        link: "https://www.arezzo.com.br/",
     },
     {
         title: "Growdev",
         subtitle: "Fullstack Developer",
         tecnologies: "React • Node Js • SQL • AWS",
         period: "2022 - 2022",
-        link: "www.arezzo.com.br",
+        link: "https://www.arezzo.com.br/",
     },
 ];
 
@@ -124,7 +124,7 @@ export default function About() {
                     </div>
                     <div className="ml-4">
                         <h1
-                            onClick={() => router.push(link)}
+                            onClick={() => window.open(link, "_blank")}
                             className="text-black text-xl hover:underline underline-offset-4 cursor-pointer"
                         >
                             {title}
