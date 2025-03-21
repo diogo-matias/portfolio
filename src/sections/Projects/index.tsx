@@ -10,24 +10,28 @@ const projects = [
         captionText: "Kendrick Lamar - GNX",
         title: "Biblia Online",
         projectId: "bible",
+        link: "https://bible-iota.vercel.app/",
     },
     {
-        imageSrc: "https://www.seanhalpin.xyz/hp/figma@2x.png",
+        imageSrc: "./img/ecommerce.jpg",
         captionText: "Kendrick Lamar - GNX",
         title: "Ecommerce",
         projectId: "ecommerce",
+        link: "https://e-commerce-diogo-matias.vercel.app/",
     },
     {
         imageSrc: "https://www.seanhalpin.xyz/work/ai/ai-hero.png",
         captionText: "Kendrick Lamar - GNX",
         title: "Biblia Online",
         projectId: "code-quiz",
+        link: "",
     },
     {
         imageSrc: "https://www.seanhalpin.xyz/hp/figma@2x.png",
         captionText: "Kendrick Lamar - GNX",
         title: "Outro Projeto",
         projectId: "teste",
+        link: "",
     },
 ];
 
@@ -50,7 +54,7 @@ export function Projects() {
     function renderCard(item: any, index: number, width: string) {
         return (
             <TiltedCard
-                onClick={() => router.push(`/project/${item.projectId}`)}
+                onClick={() => window.open(item.link)}
                 key={index}
                 imageSrc={item.imageSrc}
                 altText={item.captionText}

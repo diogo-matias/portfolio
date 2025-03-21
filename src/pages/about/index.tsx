@@ -115,7 +115,7 @@ export default function About() {
             <div className="">
                 <div className="flex items-center">
                     <div className="flex items-center gap-3">
-                        <div className="w-26">{period}</div>
+                        <div className="w-32">{period}</div>
                         <div className="flex flex-col justify-center items-center mr-4">
                             <div className="border-1 border-gray-300 w-0 h-10"></div>
                             <div className="w-3 h-3 bg-gray-800 rounded-full"></div>
@@ -157,7 +157,7 @@ export default function About() {
     return (
         <div className="w-scree min-h-screen pb-40 from-[var(--background-gradiend)] bg-gradient-to-tl ">
             <Header />
-            <div className="container mx-auto max-w-md flex flex-col pt-40">
+            <div className="container mx-auto max-w-lg flex flex-col pt-40">
                 <AnimatedContent>{renderMainInfo()}</AnimatedContent>
 
                 <AnimatedContent delay={250}>{renderAbout()}</AnimatedContent>
