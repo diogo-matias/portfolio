@@ -14,22 +14,17 @@ export function Presentation() {
 
   function renderTitle() {
     return (
-      <div className="flex flex-col items-center">
-        <div className="flex">
-          <BlurText
-            text="Olá, sou "
-            className="text-9xl font-light text-[#ffffff] tracking-tighter"
-          />
-          <BlurText
-            text="Diogo"
-            className="text-9xl font-semibold text-[#ffffff] tracking-tighter"
-          />
+      <div className="flex flex-col items-center text-[#fff]">
+        <div className="flex flex-wrap justify-center text-8xl lg:text-9xl font-light tracking-tighter">
+          <BlurText text="Olá, " className="" />
+          <BlurText text="sou " className="" />
+          <BlurText text="Diogo" className="font-semibold" />
         </div>
         <BlurText
           delay={10}
           animateBy="letters"
           text="Web Fullstack & Mobile"
-          className="text-3xl font-light text-[#ffffff]"
+          className="text-2xl md:text-3xl font-light mt-5 md:mt-0"
         />
       </div>
     );
