@@ -13,6 +13,13 @@ const projects = [
     link: "https://bible-iota.vercel.app/",
   },
   {
+    imageSrc: "https://www.seanhalpin.xyz/work/ai/ai-hero.png",
+    captionText: "Kendrick Lamar - GNX",
+    title: "OUTRO PROJETO",
+    projectId: "code-quiz",
+    link: "",
+  },
+  {
     imageSrc: "./img/ecommerce.jpg",
     captionText: "Kendrick Lamar - GNX",
     title: "Ecommerce",
@@ -21,13 +28,6 @@ const projects = [
   },
   {
     imageSrc: "https://www.seanhalpin.xyz/work/ai/ai-hero.png",
-    captionText: "Kendrick Lamar - GNX",
-    title: "OUTRO PROJETO",
-    projectId: "code-quiz",
-    link: "",
-  },
-  {
-    imageSrc: "https://www.seanhalpin.xyz/hp/figma@2x.png",
     captionText: "Kendrick Lamar - GNX",
     title: "Outro Projeto",
     projectId: "teste",
@@ -63,7 +63,7 @@ export function Projects() {
         containerWidth={width}
         imageHeight="100%"
         imageWidth="100%"
-        rotateAmplitude={4}
+        rotateAmplitude={6}
         scaleOnHover={1}
         showMobileWarning={false}
         showTooltip={true}

@@ -153,7 +153,7 @@ export default function About() {
   return (
     <div className="w-scree min-h-screen pb-40 from-[var(--background-gradiend)] bg-gradient-to-tl ">
       <Header />
-      <div className="container mx-auto max-w-lg flex flex-col pt-40">
+      <div className="container text-sm md:text-base mx-auto px-4 max-w-lg flex flex-col pt-40">
         <AnimatedContent>{renderMainInfo()}</AnimatedContent>
 
         <AnimatedContent delay={250}>{renderAbout()}</AnimatedContent>
