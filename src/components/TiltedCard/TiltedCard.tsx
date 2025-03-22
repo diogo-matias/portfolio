@@ -1,6 +1,7 @@
 import type { SpringOptions } from "framer-motion";
 import { useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { twMerge } from "tailwind-merge";
 
 interface TiltedCardProps {
     imageSrc: React.ComponentProps<"img">["src"];
@@ -17,6 +18,7 @@ interface TiltedCardProps {
     overlayContent?: React.ReactNode;
     displayOverlayContent?: boolean;
     onClick?: () => void;
+    backgroundColor: string;
 }
 
 const springValues: SpringOptions = {
@@ -39,6 +41,7 @@ export default function TiltedCard({
     showTooltip = true,
     overlayContent = null,
     displayOverlayContent = false,
+    backgroundColor = "white",
     onClick,
 }: TiltedCardProps) {
     const ref = useRef<HTMLElement>(null);
@@ -95,7 +98,7 @@ export default function TiltedCard({
         <figure
             onClick={onClick}
             ref={ref}
-            className="relative hover:-translate-y-2 transition-all duration-500 w-full h-full flex flex-col items-center justify-center [perspective:800px]"
+            className="relative cursor-pointer opacity-100 hover:brightness-90 hover:-translate-y-2 transition-all duration-500 w-full h-full flex flex-col items-center justify-center [perspective:800px]"
             style={{
                 height: containerHeight,
                 width: containerWidth,
@@ -111,8 +114,11 @@ export default function TiltedCard({
             )}
 
             <motion.div
-                className="relative overflow-hidden rounded-[15px] shadow-2xl bg-white [transform-style:preserve-3d] "
+                className={twMerge(
+                    "relative overflow-hidden rounded-[15px] shadow-2xl [transform-style:preserve-3d]"
+                )}
                 style={{
+                    backgroundColor: backgroundColor,
                     width: imageWidth,
                     height: imageHeight,
                     rotateX,
@@ -123,7 +129,7 @@ export default function TiltedCard({
                 <motion.img
                     src={imageSrc}
                     alt={altText}
-                    className="absolute top-20 left-10 hover:translate-y-5 transition-all duration-400 object-cover shadow-2xl rounded-[15px] will-change-transform [transform:translateZ(0)]"
+                    className="absolute top-30 left-10 hover:translate-y-5 transition-all duration-400 object-cover shadow-2xl rounded-[15px] will-change-transform [transform:translateZ(0)]"
                     style={{
                         width: imageWidth,
                         height: imageHeight,
@@ -131,7 +137,7 @@ export default function TiltedCard({
                 />
 
                 {displayOverlayContent && overlayContent && (
-                    <motion.div className="absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)]">
+                    <motion.div className="absolute top-0 right-0 z-[2] will-change-transform [transform:translateZ(30px)]">
                         {overlayContent}
                     </motion.div>
                 )}
