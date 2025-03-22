@@ -170,13 +170,40 @@ export default function Contact() {
             <div className="mt-5">
                 <AnimatedContent delay={500}>
                     <div className="flex gap-4 text-4xl mb-4 cursor-pointer">
-                        <SiLinkedin onClick={() => openLink(links.linkedIn)} />
+                        <SiLinkedin
+                            className="text-blue-400"
+                            onClick={() => openLink(links.linkedIn)}
+                        />
                         <SiGithub onClick={() => openLink(links.github)} />
-                        <SiWhatsapp onClick={() => openLink(links.whatsApp)} />
-                        <SiGmail onClick={() => openLink(links.email)} />
+                        <SiWhatsapp
+                            className="text-green-600"
+                            onClick={() => openLink(links.whatsApp)}
+                        />
+                        <SiGmail
+                            className="text-red-400"
+                            onClick={() => openLink(links.email)}
+                        />
                     </div>
-                    <p>diogomaccedo200@gmail.com</p>
-                    <p>+55 (51) 99466-1334</p>
+                    <div className="cursor-pointer">
+                        <p
+                            className="hover:underline"
+                            onClick={() =>
+                                openLink("mailto:diogomaccedo200@gmail.com")
+                            }
+                        >
+                            diogomaccedo200@gmail.com
+                        </p>
+                        <p
+                            className="hover:underline"
+                            onClick={() =>
+                                openLink(
+                                    "https://api.whatsapp.com/send?phone=5551994661334"
+                                )
+                            }
+                        >
+                            +55 (51) 99466-1334
+                        </p>
+                    </div>
                 </AnimatedContent>
             </div>
         );

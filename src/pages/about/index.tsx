@@ -29,26 +29,25 @@ const experiences = [
 ];
 
 const tecnologies = [
-    "https://img.shields.io/badge/Tailwind-fff?style=for-the-badge&logo=tailwindcss&logoColor=black",
-    "https://img.shields.io/badge/Next_JS-fff?style=for-the-badge&logo=nextdotjs&logoColor=black",
-    "https://img.shields.io/badge/Jest-fff?style=for-the-badge&logo=jest&logoColor=black",
-    "https://img.shields.io/badge/React_JS_/_Native-fff?style=for-the-badge&logo=react&logoColor=black",
-    "https://img.shields.io/badge/JavaScript-fff?style=for-the-badge&logo=javascript&logoColor=black",
-    "https://img.shields.io/badge/TypeScript-fff?style=for-the-badge&logo=typescript&logoColor=black",
-    "https://img.shields.io/badge/HTML5-fff?style=for-the-badge&logo=html5&logoColor=black",
-    "https://img.shields.io/badge/CSS3-fff?style=for-the-badge&logo=css3&logoColor=black",
-    "https://img.shields.io/badge/MySQL-fff?style=for-the-badge&logo=mysql&logoColor=black",
-    "https://img.shields.io/badge/GIT-fff?style=for-the-badge&logo=git&logoColor=black",
-    "https://img.shields.io/badge/Linux-fff?style=for-the-badge&logo=linux&logoColor=black",
-    "https://img.shields.io/badge/Redux_Toolkit-fff?style=for-the-badge&logo=redux&logoColor=black",
-    "https://img.shields.io/badge/Redux_Saga-fff?style=for-the-badge&logo=reduxsaga&logoColor=black",
-    "https://img.shields.io/badge/.NET-fff?style=for-the-badge&logo=dotnet&logoColor=black",
+    "https://img.shields.io/badge/Tailwind-dd82fe?style=for-the-badge&logo=tailwindcss&logoColor=white",
     "https://img.shields.io/badge/MySql-fff?style=for-the-badge&logo=mysql&logoColor=black",
-    "https://img.shields.io/badge/PostgreSQL-fff?style=for-the-badge&logo=postgresql&logoColor=black",
+    "https://img.shields.io/badge/Next_JS-39c3a5?style=for-the-badge&logo=nextdotjs&logoColor=white",
+    "https://img.shields.io/badge/Jest-55a9fd?style=for-the-badge&logo=jest&logoColor=white",
+    "https://img.shields.io/badge/.NET-fff?style=for-the-badge&logo=dotnet&logoColor=black",
+    "https://img.shields.io/badge/React_JS_/_Native-55a9fd?style=for-the-badge&logo=react&logoColor=white",
+    "https://img.shields.io/badge/JavaScript-dd82fe?style=for-the-badge&logo=javascript&logoColor=white",
+    "https://img.shields.io/badge/TypeScript-39c3a5?style=for-the-badge&logo=typescript&logoColor=white",
+    "https://img.shields.io/badge/HTML5-55a9fd?style=for-the-badge&logo=html5&logoColor=white",
+    "https://img.shields.io/badge/MySQL-39c3a5?style=for-the-badge&logo=mysql&logoColor=white",
+    "https://img.shields.io/badge/GIT-55a9fd?style=for-the-badge&logo=git&logoColor=white",
+    "https://img.shields.io/badge/Linux-fff?style=for-the-badge&logo=linux&logoColor=black",
+    "https://img.shields.io/badge/CSS3-dd82fe?style=for-the-badge&logo=css3&logoColor=white",
+    "https://img.shields.io/badge/Redux_Toolkit-fff?style=for-the-badge&logo=redux&logoColor=black",
+    "https://img.shields.io/badge/Redux_Saga-55a9fd?style=for-the-badge&logo=reduxsaga&logoColor=white",
+    "https://img.shields.io/badge/PostgreSQL-55a9fd?style=for-the-badge&logo=postgresql&logoColor=white",
 ];
 
 export default function About() {
-    // function ren
     const router = useRouter();
 
     function renderMainInfo() {
