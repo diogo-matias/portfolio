@@ -38,7 +38,7 @@ export function Header() {
             bg-[rgba(256,256,256,0.1)] shadow-2xl`}
       // style={{ boxShadow: "0 0 30px rgba(256, 256, 256, 0.1)" }}
     >
-      {buttons.map((item) => {
+      {buttons.map((item, index) => {
         const isSelected = item.path === currentRoute;
         const selectedItemStyle = `bg-[var(--background) shadow-xl`;
         const itemStyle = isSelected ? selectedItemStyle : "";
@@ -55,7 +55,7 @@ export function Header() {
             style={{
               backgroundColor: isSelected ? "var(--background)" : "",
             }}
-            key={item.label}
+            key={`${item.label}-index`}
           >
             {item.label}
           </div>

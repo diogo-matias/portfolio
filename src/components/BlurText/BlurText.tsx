@@ -110,7 +110,7 @@ const BlurText: React.FC<BlurTextProps> = ({
     <p ref={ref} className={`blur-text ${className} flex flex-wrap`}>
       {springs.map((props, index) => (
         <AnimatedSpan
-          key={index}
+          key={`blur-${index}`}
           style={props}
           className="inline-block transition-transform will-change-[transform,filter,opacity]"
         >
