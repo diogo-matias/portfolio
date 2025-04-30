@@ -77,10 +77,11 @@ export default function About() {
       <div className="mt-8">
         <h2 className="text-xl mb-5">Sobre</h2>
         <p className="text-gray-600 font-light">
-          Sou desenvolvedor web fullstack apaixonado por programação e resolução
-          lógica de problemas. Encontro minha inspiração enfrentando desafios e
-          estou constantemente motivado a adquirir novos conhecimentos e
-          habilidades.
+          Sou Engenheiro de Software Full-Stack com mais de 3 anos de
+          experiência prática em desenvolvimento de aplicações web e móveis de
+          alta performance. Tenho forte conhecimento em arquitetura de sistemas,
+          APIs RESTful, front-end escalável e integração contínua (CI/CD),
+          sempre com foco em qualidade, performance e experiência do usuário.
         </p>
       </div>
     );
